@@ -1,24 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/20 11:26:10 by bokim             #+#    #+#             */
-/*   Updated: 2026/02/18 15:36:26 by bokim            ###   ########.fr       */
+/*   Created: 2025/11/05 14:45:04 by bokim             #+#    #+#             */
+/*   Updated: 2026/01/09 15:50:27 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+/*
+DESCRIPTION :
+ft_isalpha checks if c is ab alphabetic char
 
-// standard headers
-# include <stdint.h>
-# include <stdlib.h>
-# include <unistd.h>
+return value :
+- non-zero value if c is alphabetic
+- 0 if not
+*/
 
-size_t	ft_strlen(const char *str);
-int	    ft_isalpha(int c)
-
-#endif
+int	ft_isalpha(int c)
+{
+	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
+		return (1);
+	return (0);
+}
