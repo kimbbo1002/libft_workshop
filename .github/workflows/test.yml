@@ -20,3 +20,8 @@ jobs:
       
       - name: Run norminette
         run: norminette *.c *.h
+      
+      - name: Run strlen Tests
+        run: |
+          cc test_ft_strlen.c ft_strlen.c -o test_ft_strlen
+          ./test_ft_strlen
