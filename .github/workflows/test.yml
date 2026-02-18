@@ -15,8 +15,8 @@ jobs:
 
       - name: install Norminette
         run: 
-          python3 -m pip install --upgrade pip
-          python3 -m pip install --upgrade norminette
+          python3 -m pip install --upgrade pip 
+          pip install norminette
       
       - name: Run norminette
         run: norminette *.c *.h
