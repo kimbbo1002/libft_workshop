@@ -6,11 +6,12 @@
 /*   By: bokim <bokim@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/18 15:35:21 by bokim             #+#    #+#             */
-/*   Updated: 2026/02/18 15:37:12 by bokim            ###   ########.fr       */
+/*   Updated: 2026/02/18 15:40:59 by bokim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <ctype.h>
+#include <stdio.h>
 #include "libft.h"
 
 int main()

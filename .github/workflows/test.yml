@@ -21,7 +21,12 @@ jobs:
       - name: Run norminette
         run: norminette ft_strlen.c libft.h
       
-      - name: Run strlen Tests
+      - name: Run strlen tests
         run: |
           cc test_ft_strlen.c ft_strlen.c -o test_ft_strlen
           ./test_ft_strlen
+      
+      - name: Run isalpha tests
+        run: |
+          cc ft_isalpha.c test_ft_isalpha.c -o test_ft_isalpha
+          ./test_ft_isalpha
