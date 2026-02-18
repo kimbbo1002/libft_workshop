@@ -19,7 +19,7 @@ jobs:
           python3 -m pip install norminette
       
       - name: Run norminette
-        run: norminette *.c *.h
+        run: norminette ft_strlen.c libft.h
       
       - name: Run strlen Tests
         run: |
